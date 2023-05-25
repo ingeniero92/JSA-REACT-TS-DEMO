@@ -14,4 +14,4 @@ Como breve resumen, la página web ha sido creada con React 18, TypeScript y Rea
 
 Todo ello maquetado con un cóctel de CSS Modules, PostCSS y SCSS con Flexbox.
 
-[DEMO](https://ingeniero92.github.io/jsa-react-ts-demo/)
+[DEMO EN GITHUB PAGES](https://ingeniero92.github.io/jsa-react-ts-demo/)
