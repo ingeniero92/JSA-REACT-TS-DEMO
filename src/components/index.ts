@@ -1,0 +1,10 @@
+export { default as FooterComponent }   from "./Footer/FooterComponent";
+export { default as HeaderComponent }   from "./Header/HeaderComponent";
+export { default as LangComponent }     from "./Header/LangComponent";
+export { default as LinksComponent }    from "./Header/LinksComponent";
+export { default as TitleComponent }    from "./Header/TitleComponent";
+export { default as UserComponent }     from "./Header/UserComponent";
+export { default as InfoComponent }     from "./Main/InfoComponent";
+export { default as MainComponent }     from "./Main/MainComponent";
+export { default as PageComponent }     from "./Main/PageComponent";
+export { default as NavComponent }      from "./Nav/NavComponent";

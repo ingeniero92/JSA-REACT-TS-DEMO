@@ -1,0 +1,72 @@
+/* BODY */
+
+html {
+    font-size: 16px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    @include createBody( $background-color, $color-primary, $font-stack );
+}
+
+.main {
+    background-color: $background-color;
+}
+
+// Not valid size
+@media (max-width: 319px) {                       
+    body {
+        display: none;
+    }
+}
+
+// Mobile devices
+@media (min-width: 320px) and (max-width: 480px) {                       
+    body {
+        font-size: 0.85rem;
+    }
+}
+
+// iPads, Tablets
+@media (min-width: 481px) and (max-width: 768px) {                       
+    body {
+        font-size: 0.9rem;
+    }
+}
+
+// Small screens, laptops
+@media (min-width: 769px) and (max-width: 1024px) {                       
+    body {
+        font-size: 0.95rem;
+    }
+}
+
+// Desktops, large screens
+@media (min-width: 1025px) and (max-width: 1200px) {                       
+    body {
+        font-size: 1rem;
+    }
+}
+
+// Extra large screens, TV
+@media (min-width: 1201px) {                       
+    body {
+        font-size: 1.1rem;
+    }
+}
+
+/* GENERALS */
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a {
+    cursor: pointer;
+    word-break: break-word;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}

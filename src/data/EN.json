@@ -1,0 +1,77 @@
+{
+
+    "backend-title": "Backend",
+    "backend-list-1": "PHP",
+    "backend-list-2": "Laravel",
+    "backend-list-3": "Node",
+    "backend-list-4": ".NET",
+    "backend-list-5": "MySQL",
+    "backend-list-6": "MongoDB",
+
+    "css-title": "CSS",
+    "css-list-1": "SASS",
+    "css-list-2": "CSS Modules",
+    "css-list-3": "Post CSS",
+    "css-list-4": "Flexbox",
+    "css-list-5": "Grid",
+    "css-list-6": "Bootstrap",
+    
+    "footer-disclaimer": "+18 Disclaimer: Breaking Bad API Quotes. Click to load another quote!",
+
+    "header-link-linkedin": "LinkedIn",
+    "header-link-github": "GitHub",
+    "header-link-telephone": "+34 684 07 44 30",
+    "header-link-email": "ingeniero92@gmail.com",
+    "header-link-download": "Download CV",
+    "header-login-placeholder": "Enter User...",
+    "header-login": "Connect",
+    "header-logout": "Disconnect",
+
+    "home-title": "Home",
+    "home-text-1": "I am a kind, hard-working and enthusiastic person, who loves to continue learning and teaching what I know with a team, giving my all with the purpose of creating code of the highest possible quality as I have been learning both in my degree and later in work environment.",
+    "home-text-2": "All the code of this website is public to review the style of the code and the methodology, whose link can be found in the header of the page. The technologies and packages used to create this website are very varied and even complex and excessive for the simplicity of the appearance of the website, but they serve as a technical demonstration of what I have worked on all these years.",
+    "home-text-3": "As a brief summary, this website has been created with React 18, TypeScript and React Router, which is made up of three key elements: A user system with React Context and Local Storage that simulates authentication with JWT Token and random Pokemon avatars obtained with Redux, Custom Hooks and Axios; in another element we get quotes from a famous series (Breaking Bad) from an API using Redux, Thunks and Fetch; and finally, an instant page translation system that uses Redux and Custom Hooks. All this layout with a cocktail of CSS Modules, PostCSS and SCSS with Flexbox.",
+    "home-text-4": "Also, apart from programming, I have many other hobbies such as painting miniatures, board games or video games, which I would love to design one day. But above all, I adore cats. In fact, there is one cat hidden on the website, try to find him!",
+
+    "info-title": "Graduated in Software Engineering, focused on Websites: React + Redux, JS, CSS, PHP, MySQL, MongoDB...",
+    "info-text-1": "Programming is my passion and dedication for many years. It has been since I developed websites with four HTML tags after school as a hobby, then graduating from the Universidad Complutense de Madrid as a Software Engineer and finally, developing professionally as a Web Sites Application designer mainly in the business environment and also as a freelance for more than 5 years.<br/><br> Continuously learning, continuously innovating.",
+    "info-text-2": "This is a website created entirely by me as a summary of the knowledge that appears grouped by technology in the navigation bar below. Since, in addition to serving as a link to my CV and personal data, its true purpose is to present a demonstration of my personal work in the GitHub repository, developed with professionalism and great care.",
+    "info-text-3": "I am available in any of the contacts that appear in the header. Thank you so much for the visit!",
+
+    "methodologies-title": "Methodologies",
+    "methodologies-list-1": "Software Engineering",
+    "methodologies-list-2": "Scrum",
+    "methodologies-list-3": "Kanban",
+    "methodologies-list-4": "Clean Code",
+
+    "nav-home": "About me",
+    "nav-packages": "React",
+    "nav-css": "CSS",
+    "nav-backend": "Backend",
+    "nav-methodologies": "Methodologies",
+
+    "patterns-title": "Patterns",
+    "patterns-list-1": "Compound Component",
+    "patterns-list-2": "Extensible Props",
+    "patterns-list-3": "Control Props",
+    "patterns-list-4": "State Initializer",
+    "patterns-list-5": "Function Child",
+    
+    "personal-title": "Personal Area",
+    
+    "react-title": "React and Packages",
+    "react-list-1": "TypeScript",
+    "react-list-2": "Redux (RTK)",
+    "react-list-3": "Context",
+    "react-list-4": "MobX",
+    "react-list-5": "Custom Hooks",
+    "react-list-6": "React Router",
+    "react-list-7": "Thunks",
+    "react-list-8": "Axios",
+    "react-list-9": "Fetch",
+    "react-list-10": "Environment Variables",
+
+    "secret-title": "Secret Page",
+    "secret-text": "Congratulations! You have found Nero, the secret kitty!"
+
+}

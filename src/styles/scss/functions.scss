@@ -1,0 +1,3 @@
+@function getWidth($percentage: 50%) {
+	@return calc($percentage*2);
+}
