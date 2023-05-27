@@ -32,7 +32,7 @@ export const LinksComponent = () => {
                     { t("header-link-email") }
                 </span>
             </a>            
-            <a href="/pdf/CV Jose Serrano Alvarez.pdf" target="_blank">
+            <a href="./pdf/CV Jose Serrano Alvarez.pdf" target="_blank">
                 <i className="fa-solid fa-file-pdf"/>
                 <span>
                     { t("header-link-download") }
