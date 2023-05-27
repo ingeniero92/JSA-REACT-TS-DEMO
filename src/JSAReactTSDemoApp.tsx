@@ -1,5 +1,5 @@
 import { Provider as ReduxProvider } from "react-redux";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import { store, AuthProvider } from "./store";
 import { HeaderComponent, MainComponent, FooterComponent } from "./components";
@@ -10,11 +10,11 @@ const JSAReactTSDemoApp = () => {
     return (
         <AuthProvider>
             <ReduxProvider store={ store }>
-                <BrowserRouter>
+                <HashRouter>
                     <HeaderComponent />
                     <MainComponent />
                     <FooterComponent />
-                </BrowserRouter>
+                </HashRouter>
             </ReduxProvider>
         </AuthProvider>
     )
