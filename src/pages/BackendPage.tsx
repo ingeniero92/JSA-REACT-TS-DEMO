@@ -13,7 +13,6 @@ export const BackendPage = () => {
 				<li>{ t("backend-list-3") }</li>
 				<li>{ t("backend-list-4") }</li>
 				<li>{ t("backend-list-5") }</li>
-				<li>{ t("backend-list-6") }</li>
 			</ul>
 		</PageComponent>
 	)
