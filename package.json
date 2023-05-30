@@ -59,7 +59,7 @@
       ">0.2%",
       "not dead",
       "not op_mini all",
-      "last 4 version"
+      "last 20 version"
     ],
     "development": [
       "last 1 chrome version",
