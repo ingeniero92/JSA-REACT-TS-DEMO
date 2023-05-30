@@ -5,5 +5,5 @@ import legacy from '@vitejs/plugin-legacy';
 // https://vitejs.dev/config/
 export default defineConfig({
     base: "/jsa-react-ts-demo/",
-    plugins: [legacy()],
+    plugins: [react(), legacy()],
 })
