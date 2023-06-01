@@ -9,6 +9,7 @@
 
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         margin-bottom: 1rem;
 
@@ -16,9 +17,13 @@
             height: 6rem;
             border-radius: 50%;
             border: 2px solid white;
-        }
+        }         
 
         span {
+            text-align: center;
+        }
+
+        .name {
 
             font-size: 1.5rem;
             text-transform: uppercase;
@@ -31,15 +36,20 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
 
-            i {
-                margin: 0 0.4rem;
-            }
-            
             @media (min-width: 320px) and (max-width: 480px) {
                 font-size: 1.20rem;
             }
 
         }
+
+        .danger {
+            margin-top: 0.5rem;
+            color: yellow;    
+        }        
+
+        i {
+            margin: 0 0.4rem;
+        }       
 
     }
 
