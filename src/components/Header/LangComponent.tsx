@@ -11,8 +11,8 @@ export const LangComponent = () => {
 
     return (
         <div className={ styles.lang } >
-            <span lang={ languages.ES } className={ lang != languages.ES ? styles.disabled : undefined } onClick={ startChangeLangToES }>{ languages.ES }</span>
-            <span lang={ languages.EN } className={ lang != languages.EN ? styles.disabled : undefined } onClick={ startChangeLangToEN }>{ languages.EN }</span>     
+            <span><a lang={ languages.ES } className={ lang != languages.ES ? styles.disabled : styles.active } onClick={ startChangeLangToES }>{ languages.ES }</a></span>
+            <span><a lang={ languages.EN } className={ lang != languages.EN ? styles.disabled : styles.active } onClick={ startChangeLangToEN }>{ languages.EN }</a></span>     
         </div>
     )
 }

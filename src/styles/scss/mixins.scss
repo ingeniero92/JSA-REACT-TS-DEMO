@@ -1,11 +1,14 @@
 @mixin createBody( $colorPrimary: white, $colorSecondary: black, $fontStack: "Verdana" ) {
     background: $colorPrimary;
-    background: -moz-linear-gradient(90deg, rgba(114,4,187,1) 0%, rgba(153,0,255,1) 50%, rgba(205,0,255,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(114,4,187,1) 0%, rgba(153,0,255,1) 50%, rgba(205,0,255,1) 100%);
-    background: linear-gradient(90deg, rgba(114,4,187,1) 0%, rgba(153,0,255,1) 50%, rgba(205,0,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7204bb",endColorstr="#cd00ff",GradientType=1);
     color: $colorSecondary;
     font-family: $fontStack;
     margin: 0;
     width: getWidth();
+}
+
+@mixin createGradientBody{
+    background: -moz-linear-gradient(90deg, rgba(114,4,187,1) 0%, rgba(153,0,255,1) 50%, rgba(205,0,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(114,4,187,1) 0%, rgba(153,0,255,1) 50%, rgba(205,0,255,1) 100%);
+    background: linear-gradient(90deg, rgba(114,4,187,1) 0%, rgba(153,0,255,1) 50%, rgba(205,0,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7204bb",endColorstr="#cd00ff",GradientType=1);
 }

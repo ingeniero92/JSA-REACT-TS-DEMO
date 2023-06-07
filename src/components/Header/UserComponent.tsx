@@ -56,16 +56,20 @@ export const UserComponent = () => {
             { !logged && 
                 <input onChange={ onChangeInput } value={ inputValue } placeholder={ t("header-login-placeholder") }/> 
             }
-            <span onClick={ onLogin }>{ `${ logged ? t("header-logout") + " " + userName : t("header-login")}` }</span>
+            <span className={ styles.button } onClick={ onLogin }>
+                <span>{ `${ logged ? t("header-logout") + " " + userName : t("header-login")}` }</span> 
+            </span>
             { logged && 
-                <Link to="/Personal/Secret"> 
-                    { !isLoadingPokeAvatar && 
-                        <img 
-                            className={`${ isSecretPage() ? styles.active : ""}`}
-                            src={ pokemon?.sprites.front_default } 
-                        /> 
-                    } 
-                </Link>
+                <span className={ styles.avatar }>
+                    <Link to="/Personal/Secret"> 
+                        { !isLoadingPokeAvatar && 
+                            <img 
+                                className={`${ isSecretPage() ? styles.active : ""}`}
+                                src={ pokemon?.sprites.front_default } 
+                            /> 
+                        } 
+                    </Link>
+                </span>
             }
         </div>
     )

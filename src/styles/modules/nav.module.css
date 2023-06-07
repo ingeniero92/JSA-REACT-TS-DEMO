@@ -21,11 +21,11 @@
         text-shadow: 1px 1px 2px $color-primary;
 
         &:hover {
-            color: $color-primary;
+            color: $color-terciary;
         }
 
         &.active {
-            color: $color-terciary;
+            color: $color-primary;
         }
 
     }
