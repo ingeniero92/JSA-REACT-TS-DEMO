@@ -1,9 +1,10 @@
 import { useEffect, useRef } from "react";
+import { animateScroll } from 'react-scroll';
 
 import { PageComponent } from "../components";
 import { useUiStore } from "../hooks";
 
-import styles from "../styles/modules/styles.module.css";
+import styles from "../styles/modules/main.module.css";
 import Nero from "../assets/img/Nero.jpg";
 
 export const SecretPage = () => {
@@ -17,7 +18,8 @@ export const SecretPage = () => {
     const nero = useRef<HTMLInputElement>( null );
 
     useEffect( () => {
-        nero.current?.scrollIntoView();
+        //nero.current?.scrollIntoView({ behavior: "smooth" });
+        animateScroll.scrollToBottom();
     }, [] );
 
     return (

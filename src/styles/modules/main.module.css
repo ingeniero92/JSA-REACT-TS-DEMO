@@ -5,22 +5,27 @@
     display: flex;
     flex-direction: column;
     background-color: $background-color;
+    margin: $main-margin-tb $main-margin-lr;
+
+    @media (max-width: 769px) {      
+        margin: $main-margin-xs;                 
+    }
 
     .page { 
 
         display: flex;
         justify-content: center;
-        padding: 2rem;
+        margin: $page-margin-top $page-margin-lr $page-margin-bottom;
 
-        @media (max-width: 769px) {                       
-            padding: 3rem;
+        @media (max-width: 769px) {      
+            margin: $page-margin-top-xs $page-margin-lr-xs $page-margin-bottom-xs;                 
         }
 
         .pageContainer {            
 
             display: flex;
             flex-direction: column;
-            max-width: 800px;                
+            max-width: $page-max-width;                
 
             .job {
                 font-size: 1.35rem;
@@ -31,7 +36,7 @@
             }
 
             span {
-                margin-bottom: 1rem;
+                margin: $page-span-margin-top $page-span-margin-lr $page-span-margin-bottom;
                 text-align: justify;
             }
 
@@ -61,13 +66,24 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
-                margin: 2rem 0;
+                align-items: center;                
             
                 i {
-                    font-size: 5rem;
-                    color: $color-terciary;
+                    margin-top: 1rem;
+                    font-size: 5rem;                    
                     cursor: pointer;
+                }
+
+                a {
+                    color: $color-secondary;
+                    transition: all 0.25s ease;
+                    &:hover {
+                        color: $color-terciary;
+                    } 
+                }                 
+
+                a::after {
+                    display: none;
                 }
             
             }
@@ -79,6 +95,7 @@
             
                 span {
                     text-align: center;
+                    margin-bottom: 1rem;
                 }
             
                 img {

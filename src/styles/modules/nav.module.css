@@ -12,7 +12,7 @@
 
     a {
 
-        margin: 0 0.5rem;
+        margin: $nav-margin-a-tb $nav-margin-a-lr;
         color: $color-secondary;
         font-weight: bold;
         font-size: 1.75rem;
@@ -26,6 +26,10 @@
 
         &.active {
             color: $color-primary;
+        }
+
+        &::after {
+            bottom: -9px;
         }
 
     }

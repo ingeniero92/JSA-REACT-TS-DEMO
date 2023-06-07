@@ -1,6 +1,6 @@
 import { ChildrenProp } from "../../interfaces";
 
-import styles from "../../styles/modules/styles.module.css";
+import styles from "../../styles/modules/main.module.css";
 
 export const PageComponent = ( { children }: ChildrenProp ) => {
 

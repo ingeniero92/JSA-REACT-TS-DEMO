@@ -7,10 +7,10 @@
     align-self: center;
     justify-content: space-between;
     max-width: $max-width;
-    padding: 0 3rem 3rem;
+    margin: $info-margin-top $info-margin-lr $info-margin-bottom;
 
     @media (min-width: 320px) and (max-width: 480px) {
-        padding: 0;
+        margin: 0;
     }
 
     .name {
@@ -19,11 +19,9 @@
         font-size: 2rem;
         line-height: 2.5rem;
         text-transform: uppercase;
-        padding: 0 3rem 1.5rem;
-        margin-top: 0.5rem;
+        margin: $info-name-margin-top $info-name-margin-lr $info-name-margin-bottom;
         font-weight: bold;
         font-family: MatterMedium, Matter, Helvetica, Arial, Verdana, Tahoma, sans-serif;
-
         background: linear-gradient(to right, $color-primary 0%, $color-secondary 50%, $color-primary 100%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -35,7 +33,6 @@
 
         @media (min-width: 320px) and (max-width: 480px) {
             font-size: 1.5rem;
-            padding: 0 0 1rem;
         }
 
     }
@@ -43,9 +40,10 @@
     .container {
 
         display: flex;
-        padding: 0 3rem;
+        margin: $info-container-margin-tb $info-container-margin-lr;
 
-        @media (max-width: 769px) {                       
+        @media (max-width: 769px) {      
+            margin: $info-container-margin-top-xs $info-container-margin-lr-xs $info-container-margin-bottom-xs;                 
             flex-direction: column;
         }
     
@@ -61,7 +59,7 @@
             }
 
             span {
-                margin-bottom: 1rem;
+                margin-top: $info-span-margin-top;
                 text-align: justify;
                 line-height: 1.75em;
             }            
@@ -82,7 +80,7 @@
 
             @media (min-width: 769px) {                       
                 position: relative;
-                bottom: 3.5rem; 
+                bottom: 3rem; 
             }
 
             img {

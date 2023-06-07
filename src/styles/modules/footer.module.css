@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     color: $color-secondary;
-    margin: 1.5rem 1rem 1rem;
+    margin: $footer-margin-top $footer-margin-lr $footer-margin-bottom;
 
     .disclaimer {
 

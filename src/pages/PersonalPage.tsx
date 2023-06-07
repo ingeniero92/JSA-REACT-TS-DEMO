@@ -2,7 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 
 import { PageComponent } from "../components";
 
-import styles from "../styles/modules/styles.module.css";
+import styles from "../styles/modules/main.module.css";
 
 export const PersonalPage = () => {  
 

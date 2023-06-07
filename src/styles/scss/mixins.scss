@@ -4,6 +4,7 @@
     font-family: $fontStack;
     margin: 0;
     width: getWidth();
+    line-height: 1.25rem;
 }
 
 @mixin createGradientBody{
