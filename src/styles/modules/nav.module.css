@@ -20,6 +20,11 @@
         transition: all 0.25s linear;
         text-shadow: 1px 1px 2px $color-primary;
 
+        @media (min-width: 769px) and (max-width: 850px) {                       
+            font-size: 1.65rem;
+            margin: $nav-margin-a-tb-xs $nav-margin-a-lr-xs;
+        }
+
         &:hover {
             color: $color-terciary;
         }
