@@ -10,6 +10,7 @@
 
     .disclaimer {
 
+        display: flex;
         text-align: center;
         transition: color 0.25s linear;
         cursor: pointer;
@@ -19,6 +20,7 @@
         }
 
         i {
+            align-self: center;
             color: red;
             margin: 0 0.5rem;
         }

@@ -9,8 +9,8 @@
     max-width: $max-width;
     margin: $info-margin-top $info-margin-lr $info-margin-bottom;
 
-    @media (min-width: 320px) and (max-width: 480px) {
-        margin: 0;
+    @media (min-width: 320px) and (max-width: 768px) {
+        margin: $info-margin-top-xs $info-margin-lr-xs $info-margin-bottom-xs;
     }
 
     .name {

@@ -36,8 +36,14 @@
             }
 
             span {
+
                 margin: $page-span-margin-top $page-span-margin-lr $page-span-margin-bottom;
                 text-align: justify;
+
+                &:first-child {
+                    margin: 0 $page-span-margin-lr $page-span-margin-bottom;
+                }
+
             }
 
             ul {
@@ -99,12 +105,44 @@
                 }
             
                 img {
+
                     align-self: center;
                     width: 75%;
                     border: 5px solid $color-terciary;
                     border-radius: 1rem;
+
+                    @media (min-width: 320px) and (max-width: 480px) {
+                        width: 140%;
+                    }
+
                 }
                 
+            }
+
+            .gif {
+
+                width: 50%;
+                align-self: center;
+                margin: 2rem 0 1rem;
+                border: 3px solid $color-secondary;
+                border-radius: 15px;
+
+                @media (min-width: 320px) and (max-width: 480px) {
+                    width: 100%;
+                }
+
+            }
+
+            .brands {
+
+                display: flex;
+                width: 100%;
+
+                img {
+                    width: 10%;
+                    margin: 2rem 1.25% 1rem;
+                }
+
             }
 
         }
