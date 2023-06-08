@@ -76,16 +76,29 @@
             
                 i {
                     margin-top: 1rem;
-                    font-size: 5rem;                    
-                    cursor: pointer;
+                    font-size: 5rem;
                 }
 
                 a {
+
                     color: $color-secondary;
                     transition: all 0.25s ease;
+
                     &:hover {
-                        color: $color-terciary;
-                    } 
+                        color: $color-primary;
+                    }
+
+                    &.active {
+                        
+                        color: $color-primary;
+
+                        &:hover {
+                            color: $color-primary;
+                            cursor: default;
+                        }
+
+                    }
+
                 }                 
 
                 a::after {

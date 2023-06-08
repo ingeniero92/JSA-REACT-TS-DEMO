@@ -9,3 +9,4 @@ export { default as InfoComponent }     from "./Main/InfoComponent";
 export { default as MainComponent }     from "./Main/MainComponent";
 export { default as PageComponent }     from "./Main/PageComponent";
 export { default as NavComponent }      from "./Nav/NavComponent";
+export { default as CrossFadeImage }    from "./Utils/CrossFadeImage";

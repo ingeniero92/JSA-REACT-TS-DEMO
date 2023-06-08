@@ -45,8 +45,8 @@ export const UserComponent = () => {
 
     const location = useLocation();
 
-    const isSecretPage = (): boolean => {
-        return location.pathname == "/Personal/Secret" ? true : false;
+    const isPersonalPage = (): boolean => {
+        return location.pathname == "/Personal" ? true : false;
     }
 
     /* RETURN */
@@ -61,10 +61,10 @@ export const UserComponent = () => {
             </span>
             { logged && 
                 <span className={ styles.avatar }>
-                    <Link to="/Personal/Secret"> 
+                    <Link to="/Personal"> 
                         { !isLoadingPokeAvatar && 
                             <img 
-                                className={`${ isSecretPage() ? styles.active : ""}`}
+                                className={`${ isPersonalPage() ? styles.active : ""}`}
                                 src={ pokemon?.sprites.front_default } 
                             /> 
                         } 
