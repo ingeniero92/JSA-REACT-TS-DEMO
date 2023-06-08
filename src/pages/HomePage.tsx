@@ -19,7 +19,7 @@ export const HomePage = () => {
             <BrandsComponent />
             <span>{ t("home-text-3") }</span>
             <div className={ styles.personal }>
-                <Link to="/Personal/Secret" state={ {scroll: false} } ><i className="fa-solid fa-cat"/></Link>
+                <Link to="/Personal/Secret" state={ { scroll: false } } ><i className="fa-solid fa-cat"/></Link>
             </div>
         </PageComponent>
     )

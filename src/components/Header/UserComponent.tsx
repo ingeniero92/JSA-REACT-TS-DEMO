@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { animateScroll } from "react-scroll";
 
 import { usePokemonStore, useUiStore } from "../../hooks";
 import { AuthContext } from "../../store";
@@ -60,7 +61,7 @@ export const UserComponent = () => {
                 <span>{ `${ logged ? t("header-logout") + " " + userName : t("header-login")}` }</span> 
             </span>
             { logged && 
-                <span className={ styles.avatar }>
+                <span onClick={ () => animateScroll.scrollToBottom() } className={ styles.avatar }>
                     <Link to="/Personal"> 
                         { !isLoadingPokeAvatar && 
                             <img 
