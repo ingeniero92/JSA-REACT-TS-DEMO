@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { animateScroll } from 'react-scroll';
+import { useLocation } from "react-router-dom";
 
 import { PageComponent } from "../components";
 import { useUiStore } from "../hooks";
@@ -15,11 +16,15 @@ export const SecretPage = () => {
 
     /* SCROLL TO NERO */
 
+    const location = useLocation();
+
     const nero = useRef<HTMLInputElement>( null );
 
     useEffect( () => {
         //nero.current?.scrollIntoView({ behavior: "smooth" });
-        animateScroll.scrollToBottom();
+        if(location.state?.scroll == null){
+            animateScroll.scrollToBottom();
+        }        
     }, [] );
 
     return (
