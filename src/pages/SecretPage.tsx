@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { animateScroll } from "react-scroll";
 
+import type { ScrollState } from "../interfaces";
 import { PageComponent, CrossFadeImage } from "../components";
 import { useUiStore } from "../hooks";
 
@@ -16,12 +17,12 @@ export const SecretPage = () => {
 
     /* SCROLL TO NERO */
 
-    const location = useLocation();
-
     const nero = useRef<HTMLInputElement>( null );
 
+    const state : ScrollState = useLocation().state;
+
     useEffect( () => {
-        if(location.state?.scroll == null){
+        if(state?.scroll == null){
             //nero.current?.scrollIntoView( { block: "end", behavior: "smooth" } );
             animateScroll.scrollToBottom();
         }        

@@ -43,6 +43,12 @@ export interface RouteDef {
     params?: RouteParams;
 }
 
+/* REACT ROUTER STATES */
+
+export interface ScrollState {
+    scroll: boolean;
+}
+
 /* UI */
 
 export interface UiState {

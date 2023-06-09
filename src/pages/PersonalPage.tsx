@@ -2,16 +2,17 @@ import { useEffect } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { animateScroll } from "react-scroll";
 
+import type { ScrollState } from "../interfaces";
 import { PageComponent } from "../components";
 
 import styles from "../styles/modules/main.module.css";
 
 export const PersonalPage = () => {  
 
-    const location = useLocation();
+    const state : ScrollState = useLocation().state;
 
     useEffect( () => {
-        if(location.state?.scroll == null){
+        if(state?.scroll == null){
             animateScroll.scrollToBottom();
         }        
     }, [] );
